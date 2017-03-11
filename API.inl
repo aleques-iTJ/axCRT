@@ -1,4 +1,4 @@
-
+// Helper for exporting from dynamic library builds
 
 #if defined (BNR_DYNAMIC)
 	#if defined (__cplusplus)
