@@ -4,30 +4,9 @@
 #include "API.inl"
 
 
-typedef struct mtx_t
-{
-	union
-	{
-		void*		ptr;
-		uintptr_t	id;
-	};
-
-	unsigned char pf_Storage[46];
-}mtx_t;
-
-typedef mtx_t cnd_t;
-
-
-typedef struct thrd_t
-{
-	union
-	{
-		void*		ptr;
-		uintptr_t	id;
-	};
-}thrd_t;
-
-typedef uint32_t tss_t;
+typedef struct	mtx_t		mtx_t;
+typedef struct	thrd_t		thrd_t;
+typedef struct	cnd_t		cnd_t;
 
 enum
 {
